@@ -8,13 +8,13 @@ import { SmoothScrollProvider } from "@/components/SmoothScrollProvider";
 export const metadata: Metadata = {
     metadataBase: new URL(siteConfig.url),
     title: {
-        default: `${siteConfig.name} — Trust-first dinner club for real friendships`,
+        default: siteConfig.name,
         template: `%s | ${siteConfig.name}`
     },
     description: siteConfig.description,
-    keywords: ["dinner club", "friendships", "Bangalore", "women", "social", "community", "curated"],
+    keywords: ["dinner club", "friendships", "Bangalore", "women", "social", "community", "curated", "offline circles"],
     openGraph: {
-        title: `${siteConfig.name} — Trust-first dinner club`,
+        title: siteConfig.name,
         description: siteConfig.description,
         url: siteConfig.url,
         siteName: siteConfig.name,

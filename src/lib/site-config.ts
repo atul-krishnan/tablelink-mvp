@@ -1,6 +1,6 @@
 export const siteConfig = {
-    name: "TableLink",
-    description: "A trust-first dinner club for real friendships. Curated dinner circles for working professionals who want genuine connection.",
+    name: "TableLink — Dinner club + offline circles for genuine connections",
+    description: "Dinner club + offline circles for genuine connections. Women-only tables launching in Bangalore.",
     url: "https://tablelink.club",
     ogImage: "/og-image.png",
 
@@ -8,15 +8,15 @@ export const siteConfig = {
         { title: "How it works", href: "#how-it-works" },
         { title: "Safety", href: "#safety" },
         { title: "Locations", href: "#locations" },
-        { title: "Join", href: "#join" }
+        { title: "Apply", href: "#join" }
     ],
 
     hero: {
-        headline: "A trust-first dinner club for real friendships.",
-        subheadline: "Curated dinner circles for working professionals who want genuine connection — not dating, not networking.",
-        badge: "Now launching in Bangalore with women-only tables.",
+        headline: "TableLink — Dinner club + offline circles for genuine connections",
+        subheadline: "Genuine connection — not dating, not networking.",
+        badge: "Launching in Bangalore with women-only tables.",
         holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend). Food/drinks paid at the venue.",
-        primaryCta: { label: "Join the circle", href: "#join" },
+        primaryCta: { label: "Apply for a seat", href: "#join" },
         secondaryCta: { label: "How it works", href: "#how-it-works" }
     },
 
@@ -46,23 +46,23 @@ export const siteConfig = {
         steps: [
             {
                 number: 1,
-                title: "Apply",
+                title: "Apply (2 minutes)",
                 description: "Answer a few questions so we can curate the right table."
             },
             {
                 number: 2,
-                title: "Get vetted",
-                description: "Verified profiles help keep circles safe and comfortable."
+                title: "Quick profile check",
+                description: "We review LinkedIn/Instagram + basic consistency checks to keep circles comfortable."
             },
             {
                 number: 3,
-                title: "Get invited",
-                description: "If selected, you'll receive a WhatsApp invite with the details."
+                title: "Get invited (WhatsApp)",
+                description: "If selected, you'll get the venue + time and a simple RSVP."
             },
             {
                 number: 4,
-                title: "Show up & build a circle",
-                description: "Circles are designed for repeat comfort, not one-time novelty."
+                title: "Show up & build familiarity",
+                description: "Tables are 6–8 max. Come once, or keep returning — we optimize for repeat comfort, not one-time novelty."
             }
         ]
     },
@@ -82,11 +82,11 @@ export const siteConfig = {
         bullets: [
             "Launching with women-only tables",
             "Public, well-lit venues",
-            "Verified profiles required (LinkedIn/Instagram)",
+            "Profile checks (LinkedIn/Instagram)",
             "Clear code of conduct",
             "Zero tolerance for boundary violations"
         ],
-        privacyLine: "We don't share phone numbers at the table. Any connections happen only by mutual opt-in."
+        privacyLine: "We don't share phone numbers at the table. Connections happen only by mutual opt-in. For logistics, we use WhatsApp — you'll only be added after you opt in, and members in a group may be able to see each other's numbers."
     },
 
     locations: {
@@ -97,21 +97,21 @@ export const siteConfig = {
                 tag: "LIVE",
                 title: "Indiranagar",
                 body: "Weekly dinner circles curated for comfort, safety, and repeatability.",
-                button: "Join Indiranagar circle",
+                button: "Apply for Indiranagar",
                 value: "Indiranagar (Live)"
             },
             {
                 tag: "COMING SOON",
                 title: "Koramangala",
                 body: "We'll launch when the waitlist hits critical mass.",
-                button: "Join Koramangala waitlist",
+                button: "Koramangala waitlist",
                 value: "Koramangala (Coming soon)"
             },
             {
                 tag: "COMING SOON",
                 title: "MG Road",
                 body: "Join the waitlist to help us open circles here next.",
-                button: "Join MG Road waitlist",
+                button: "MG Road waitlist",
                 value: "MG Road (Coming soon)"
             }
         ],
@@ -119,7 +119,7 @@ export const siteConfig = {
     },
 
     joinForm: {
-        title: "Join the circle",
+        title: "Apply",
         body: "We review applications weekly. If selected, you'll get an invite on WhatsApp.",
         neighborhoods: [
             "Indiranagar (Live)",
@@ -128,7 +128,7 @@ export const siteConfig = {
             "Other"
         ],
         travelTimes: ["15 min", "20 min", "30 min"],
-        workTypes: ["Job", "Business", "Freelance"],
+        workTypes: ["Job", "Business", "Freelance", "Other"],
         consentText: "I agree to the code of conduct and understand the ₹199 hold policy.",
         submitButton: "Apply",
         success: {
@@ -142,6 +142,10 @@ export const siteConfig = {
         {
             question: "Is this only for Bangalore?",
             answer: "We're starting with Bangalore to get the experience right. If it works, we'll expand city-by-city."
+        },
+        {
+            question: "Will this always be ₹199?",
+            answer: "No — ₹199 is a refundable hold during launch to reduce no-shows. If the model works, we may evolve into ticketing or memberships later to keep circles reliable and safe."
         },
         {
             question: "Is this dating?",
@@ -162,17 +166,16 @@ export const siteConfig = {
     ],
 
     launchPolicy: {
-        title: "Launch Policy",
-        body: "We're starting with women-only tables to build trust and safety. As we grow, we'll expand to mixed and other formats based on community feedback."
+        title: "Launch policy",
+        body: "We're starting small and keeping circles curated. For now, we use a ₹199 refundable hold to confirm attendance. If this works, we'll introduce ticketing and memberships later to maintain quality and safety."
     },
 
     formats: {
-        title: "Formats",
+        title: "Formats (launching step-by-step)",
         lines: [
-            "Dinner circles run weekly",
-            "Tables of 4-6 people",
-            "2-3 hour sessions",
-            "Curated for comfort and connection"
+            "Right now: Women-only Wednesday dinners (Bangalore)",
+            "Next: Mixed tables • Drinks circles (once the model is proven)",
+            "Later: Unplugged evenings • Culture nights • Rides — introduced carefully as we scale"
         ]
     },
 
