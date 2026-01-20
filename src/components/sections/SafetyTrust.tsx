@@ -13,35 +13,35 @@ const safetyFeatures = [
         title: "Public, well-lit venues",
         description: "Curated for comfort and safety",
         icon: "🛡️",
-        image: "/images/safety-venue.jpg",
+        image: "/images/safety-public-venues.jpg",
         alt: "Beautiful, well-lit restaurant interior with warm ambient lighting"
     },
     {
         title: "Women-only tables",
         description: "Safe, supportive environment",
         icon: "👥",
-        image: "/images/hero-women-dining.jpg",
+        image: "/images/safety-women-only.jpg",
         alt: "Diverse group of women friends laughing and enjoying dinner together"
     },
     {
         title: "Verified profiles",
         description: "LinkedIn/Instagram required",
         icon: "✓",
-        image: "/images/safety-venue.jpg",
-        alt: "Hands holding phone showing verified member profile"
+        image: "/images/safety-verified-profiles.jpg",
+        alt: "Hands holding phone showing verified LinkedIn profile"
     },
     {
         title: "Clear code of conduct",
         description: "Respectful interactions only",
         icon: "📋",
-        image: "/images/hero-women-dining.jpg",
+        image: "/images/safety-code-of-conduct.jpg",
         alt: "Elegant table setting with community guidelines cards"
     },
     {
         title: "Zero tolerance",
         description: "For boundary violations",
         icon: "🚫",
-        image: "/images/safety-venue.jpg",
+        image: "/images/safety-zero-tolerance.jpg",
         alt: "Protective shield concept in warm restaurant setting"
     }
 ];
