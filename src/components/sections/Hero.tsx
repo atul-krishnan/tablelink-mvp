@@ -31,7 +31,7 @@ export function Hero() {
                 className="pointer-events-none absolute inset-0"
                 style={{
                     backgroundImage:
-                        "linear-gradient(to right, rgba(180, 140, 100, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(180, 140, 100, 0.04) 1px, transparent 1px)",
+                        "linear-gradient(to right, rgba(251, 101, 30, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(251, 101, 30, 0.04) 1px, transparent 1px)",
                     backgroundSize: "60px 60px"
                 }}
             />

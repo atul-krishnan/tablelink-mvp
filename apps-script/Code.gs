@@ -21,7 +21,7 @@
 
 // ============ CONFIGURATION ============
 // Replace with your Google Sheet ID (the long string in the sheet URL)
-const SHEET_ID = "YOUR_GOOGLE_SHEET_ID_HERE";
+const SHEET_ID = "12hbIBA99thSQrX5sarYTUzWM1no0EexfHCjiuDCtbMs";
 
 // Replace with your sheet tab name (default is "Applications")
 const SHEET_TAB_NAME = "Applications";

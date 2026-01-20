@@ -3,15 +3,20 @@
 @tailwind utilities;
 
 :root {
-  /* Warm neutral palette - premium, trustworthy */
-  --background: 40 20% 98%;
-  --foreground: 30 10% 12%;
-  --muted: 40 15% 95%;
-  --muted-foreground: 30 8% 45%;
-  --border: 40 12% 88%;
+  /* YCombinator-inspired palette */
+  --background: 48 33% 95%;
+  /* #f5f5ee - warm beige */
+  --foreground: 0 0% 13%;
+  /* #222222 - dark text */
+  --muted: 48 20% 90%;
+  --muted-foreground: 0 0% 40%;
+  --border: 48 15% 85%;
   --card: 0 0% 100%;
-  /* Warm accent - approachable, safe */
-  --accent: 25 80% 55%;
+  /* YC Orange - iconic brand color */
+  --accent: 16 95% 55%;
+  /* #fb651e */
+  --accent-hover: 16 90% 51%;
+  /* #ee5d19 */
   --accent-foreground: 0 0% 100%;
   /* Semantic */
   --success: 150 60% 40%;
@@ -89,8 +94,8 @@ body {
 
 /* Subtle gradient sheen */
 .gradient-sheen {
-  background: radial-gradient(circle at top left, rgba(210, 140, 90, 0.08), transparent 55%),
-    radial-gradient(circle at 70% 20%, rgba(180, 120, 80, 0.06), transparent 45%);
+  background: radial-gradient(circle at top left, rgba(251, 101, 30, 0.08), transparent 55%),
+    radial-gradient(circle at 70% 20%, rgba(238, 93, 25, 0.06), transparent 45%);
 }
 
 /* Focus visible for accessibility */

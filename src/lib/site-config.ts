@@ -13,7 +13,7 @@ export const siteConfig = {
 
     hero: {
         headline: "A trust-first dinner club for real friendships.",
-        subheadline: "Curated dinner circles for working professionals who want genuine connection — not dating, not networking.",
+        subheadline: "Designed for working professionals — if your schedule fits, you’re welcome. Genuine connection — not dating, not networking.",
         badge: "Now launching in Bangalore with women-only tables.",
         holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend). Food/drinks paid at the venue.",
         primaryCta: { label: "Join the circle", href: "#join" },
@@ -27,7 +27,8 @@ export const siteConfig = {
             bullets: [
                 "want real friendships and a consistent social circle",
                 "prefer small groups over loud meetups",
-                "are 20–35, working (job/business), ₹60k+ income",
+                "are 20–35",
+                "Designed for working professionals — if your schedule fits, you’re welcome.",
                 "can commit to showing up (we keep circles small on purpose)"
             ]
         },
@@ -74,7 +75,11 @@ export const siteConfig = {
             "Refunded after you attend",
             "Non-refundable for late cancellations (<24h) or no-shows",
             "Food/drinks are paid directly to the venue"
-        ]
+        ],
+        foundingCircle: {
+            title: "Founding Circle pricing",
+            text: "We’re starting small and running early circles at a ₹199 refundable hold to confirm attendance. As we expand, we’ll introduce paid memberships to keep circles curated, consistent, and safe."
+        }
     },
 
     safety: {
@@ -128,7 +133,7 @@ export const siteConfig = {
             "Other"
         ],
         travelTimes: ["15 min", "20 min", "30 min"],
-        workTypes: ["Job", "Business", "Freelance"],
+        workTypes: ["Job", "Business", "Freelance", "Other"],
         consentText: "I agree to the code of conduct and understand the ₹199 hold policy.",
         submitButton: "Apply",
         success: {
@@ -142,6 +147,10 @@ export const siteConfig = {
         {
             question: "Is this only for Bangalore?",
             answer: "We're starting with Bangalore to get the experience right. If it works, we'll expand city-by-city."
+        },
+        {
+            question: "Will this always be ₹199?",
+            answer: "No. ₹199 is our founding-circle confirmation hold while we test and keep groups small. As we expand, we’ll introduce ticketing and memberships to maintain quality and safety."
         },
         {
             question: "Is this dating?",

@@ -36,6 +36,20 @@ export function SeatConfirmation() {
                                     </li>
                                 ))}
                             </ul>
+
+                            {/* Founding Circle Pricing Note */}
+                            {seatConfirmation.foundingCircle && (
+                                <div className="mt-6 pt-6 border-t border-border/50">
+                                    <div className="rounded-lg bg-secondary/50 p-4 border border-border/50">
+                                        <p className="text-xs font-semibold text-foreground mb-1 uppercase tracking-wider opacity-80">
+                                            {seatConfirmation.foundingCircle.title}
+                                        </p>
+                                        <p className="text-xs text-muted-foreground leading-relaxed">
+                                            {seatConfirmation.foundingCircle.text}
+                                        </p>
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </Reveal>
                 </div>

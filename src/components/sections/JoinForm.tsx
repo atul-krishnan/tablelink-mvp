@@ -323,7 +323,7 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                             {/* Work Type */}
                             <div>
                                 <label htmlFor="workType" className="block text-sm font-medium text-foreground mb-2">
-                                    Work Type <span className="text-error">*</span>
+                                    What best describes you? <span className="text-error">*</span>
                                 </label>
                                 <select
                                     id="workType"
@@ -334,7 +334,7 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                                     aria-invalid={!!errors.workType}
                                     aria-describedby={errors.workType ? "workType-error" : undefined}
                                 >
-                                    <option value="">Select work type</option>
+                                    <option value="">Select option</option>
                                     {joinForm.workTypes.map((w) => (
                                         <option key={w} value={w}>{w}</option>
                                     ))}

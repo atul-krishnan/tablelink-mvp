@@ -30,7 +30,7 @@ export function WhatThisIs() {
                                         key={index}
                                         className="flex items-start gap-3 text-sm text-muted-foreground"
                                     >
-                                        <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-success" />
+                                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-success" />
                                         {bullet}
                                     </li>
                                 ))}
@@ -53,7 +53,7 @@ export function WhatThisIs() {
                                         key={index}
                                         className="flex items-start gap-3 text-sm text-muted-foreground"
                                     >
-                                        <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-muted-foreground/40" />
+                                        <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-muted-foreground/40" />
                                         {bullet}
                                     </li>
                                 ))}
