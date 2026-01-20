@@ -161,6 +161,21 @@ export const siteConfig = {
         }
     ],
 
+    launchPolicy: {
+        title: "Launch Policy",
+        body: "We're starting with women-only tables to build trust and safety. As we grow, we'll expand to mixed and other formats based on community feedback."
+    },
+
+    formats: {
+        title: "Formats",
+        lines: [
+            "Dinner circles run weekly",
+            "Tables of 4-6 people",
+            "2-3 hour sessions",
+            "Curated for comfort and connection"
+        ]
+    },
+
     footer: {
         tagline: "Built with trust. Grown city-by-city.",
         contact: "hello@tablelink.club",

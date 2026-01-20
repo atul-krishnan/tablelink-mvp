@@ -9,12 +9,14 @@ const config: Config = {
         foreground: "hsl(var(--foreground))",
         accent: {
           DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))"
+          foreground: "hsl(var(--accent-foreground))",
+          hover: "hsl(var(--accent-hover))"
         },
         muted: "hsl(var(--muted))",
         "muted-foreground": "hsl(var(--muted-foreground))",
         border: "hsl(var(--border))",
         card: "hsl(var(--card))",
+        secondary: "hsl(var(--secondary))",
         success: "hsl(var(--success))",
         error: "hsl(var(--error))"
       },
@@ -29,8 +31,8 @@ const config: Config = {
         glow: "0 0 0 1px rgba(0,0,0,0.06), 0 20px 60px -40px rgba(0,0,0,0.4)"
       },
       fontFamily: {
-        sans: ["var(--font-body)", "Plus Jakarta Sans", "Inter", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "Space Grotesk", "Inter", "system-ui", "sans-serif"]
+        sans: ["Avenir Next", "Avenir", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Avenir Next", "Avenir", "ui-sans-serif", "system-ui", "sans-serif"]
       }
     }
   },

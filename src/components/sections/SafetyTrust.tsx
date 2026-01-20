@@ -1,10 +1,68 @@
+"use client";
+
+import * as React from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/lib/site-config";
 import { Container } from "@/components/sections/Container";
 import { Reveal } from "@/components/sections/Reveal";
 
+// Safety features with associated images
+const safetyFeatures = [
+    {
+        title: "Public, well-lit venues",
+        description: "Curated for comfort and safety",
+        icon: "🛡️",
+        image: "/images/safety-venue.jpg",
+        alt: "Beautiful, well-lit restaurant interior with warm ambient lighting"
+    },
+    {
+        title: "Women-only tables",
+        description: "Safe, supportive environment",
+        icon: "👥",
+        image: "/images/hero-women-dining.jpg",
+        alt: "Diverse group of women friends laughing and enjoying dinner together"
+    },
+    {
+        title: "Verified profiles",
+        description: "LinkedIn/Instagram required",
+        icon: "✓",
+        image: "/images/safety-venue.jpg",
+        alt: "Hands holding phone showing verified member profile"
+    },
+    {
+        title: "Clear code of conduct",
+        description: "Respectful interactions only",
+        icon: "📋",
+        image: "/images/hero-women-dining.jpg",
+        alt: "Elegant table setting with community guidelines cards"
+    },
+    {
+        title: "Zero tolerance",
+        description: "For boundary violations",
+        icon: "🚫",
+        image: "/images/safety-venue.jpg",
+        alt: "Protective shield concept in warm restaurant setting"
+    }
+];
+
 export function SafetyTrust() {
     const { safety } = siteConfig;
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+    const [isPaused, setIsPaused] = React.useState(false);
+
+    // Auto-rotate every 4 seconds
+    React.useEffect(() => {
+        if (isPaused) return;
+
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => (prev + 1) % safetyFeatures.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, [isPaused]);
+
+    const currentFeature = safetyFeatures[currentIndex];
 
     return (
         <section id="safety" className="py-20 sm:py-24">
@@ -41,37 +99,106 @@ export function SafetyTrust() {
                         </Reveal>
                     </div>
 
-                    {/* Venue Image */}
+                    {/* Auto-rotating Image Carousel */}
                     <Reveal>
-                        <div className="relative hidden lg:block">
-                            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden image-reveal shadow-glow">
-                                <Image
-                                    src="/images/safety-venue.jpg"
-                                    alt="Beautiful, well-lit restaurant interior with warm ambient lighting"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(max-width: 1024px) 100vw, 50vw"
-                                />
+                        <div
+                            className="relative hidden lg:block"
+                            onMouseEnter={() => setIsPaused(true)}
+                            onMouseLeave={() => setIsPaused(false)}
+                        >
+                            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-glow">
+                                {/* Animated Images */}
+                                <AnimatePresence mode="wait">
+                                    <motion.div
+                                        key={currentIndex}
+                                        initial={{ opacity: 0, scale: 1.1 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.95 }}
+                                        transition={{ duration: 0.7, ease: "easeInOut" }}
+                                        className="absolute inset-0"
+                                    >
+                                        <Image
+                                            src={currentFeature.image}
+                                            alt={currentFeature.alt}
+                                            fill
+                                            className="object-cover"
+                                            sizes="(max-width: 1024px) 100vw, 50vw"
+                                        />
 
-                                {/* Subtle overlay for blend */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
+                                        {/* Subtle overlay for blend */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
 
-                                {/* Border overlay */}
-                                <div className="absolute inset-0 rounded-2xl border border-white/10" />
+                                        {/* Border overlay */}
+                                        <div className="absolute inset-0 rounded-2xl border border-white/10" />
+                                    </motion.div>
+                                </AnimatePresence>
                             </div>
 
-                            {/* Caption overlay */}
-                            <div className="absolute bottom-4 left-4 right-4 glass-card rounded-xl p-4">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full bg-success/20 flex items-center justify-center text-lg">
-                                        🛡️
+                            {/* Animated Caption */}
+                            <AnimatePresence mode="wait">
+                                <motion.div
+                                    key={`caption-${currentIndex}`}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: -20 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="absolute bottom-4 left-4 right-4 glass-card rounded-xl p-4"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-lg">
+                                            {currentFeature.icon}
+                                        </div>
+                                        <div>
+                                            <p className="font-medium text-sm text-foreground">
+                                                {currentFeature.title}
+                                            </p>
+                                            <p className="text-xs text-muted-foreground">
+                                                {currentFeature.description}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p className="font-medium text-sm text-foreground">Public, well-lit venues</p>
-                                        <p className="text-xs text-muted-foreground">Curated for comfort and safety</p>
-                                    </div>
-                                </div>
+                                </motion.div>
+                            </AnimatePresence>
+
+                            {/* Progress Indicators */}
+                            <div className="absolute top-4 left-4 right-4 flex gap-2">
+                                {safetyFeatures.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setCurrentIndex(index)}
+                                        className="flex-1 h-1 rounded-full bg-white/20 overflow-hidden cursor-pointer hover:bg-white/30 transition"
+                                        aria-label={`Go to slide ${index + 1}`}
+                                    >
+                                        <motion.div
+                                            className="h-full bg-accent"
+                                            initial={{ width: "0%" }}
+                                            animate={{
+                                                width: index === currentIndex ? "100%" : "0%"
+                                            }}
+                                            transition={{
+                                                duration: index === currentIndex ? 4 : 0.3,
+                                                ease: "linear"
+                                            }}
+                                        />
+                                    </button>
+                                ))}
                             </div>
+
+                            {/* Navigation Arrows */}
+                            <button
+                                onClick={() => setCurrentIndex((prev) => (prev - 1 + safetyFeatures.length) % safetyFeatures.length)}
+                                className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-card/80 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-card transition opacity-0 hover:opacity-100 group-hover:opacity-100"
+                                aria-label="Previous slide"
+                            >
+                                ←
+                            </button>
+                            <button
+                                onClick={() => setCurrentIndex((prev) => (prev + 1) % safetyFeatures.length)}
+                                className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-card/80 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-card transition opacity-0 hover:opacity-100 group-hover:opacity-100"
+                                aria-label="Next slide"
+                            >
+                                →
+                            </button>
 
                             {/* Decorative elements */}
                             <div className="absolute -right-4 -top-4 h-20 w-20 rounded-full border border-border bg-card/80 shadow-soft" />

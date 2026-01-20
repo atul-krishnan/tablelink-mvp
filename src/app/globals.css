@@ -3,19 +3,34 @@
 @tailwind utilities;
 
 :root {
-  /* Warm neutral palette - premium, trustworthy */
-  --background: 40 20% 98%;
-  --foreground: 30 10% 12%;
-  --muted: 40 15% 95%;
-  --muted-foreground: 30 8% 45%;
-  --border: 40 12% 88%;
+  /* YCombinator-inspired palette */
+  --background: 48 33% 95%;
+  /* #f5f5ee - warm beige */
+  --foreground: 0 0% 13%;
+  /* #222222 - dark text */
+  --muted: 48 20% 92%;
+  /* slightly darker beige */
+  --muted-foreground: 0 0% 45%;
+  /* medium gray */
+  --border: 48 15% 88%;
+  /* subtle border */
   --card: 0 0% 100%;
-  /* Warm accent - approachable, safe */
-  --accent: 25 80% 55%;
+  /* pure white */
+  --secondary: 48 25% 90%;
+  /* for secondary backgrounds */
+
+  /* YC Orange - the signature color */
+  --accent: 16 95% 55%;
+  /* #fb651e - YC orange */
   --accent-foreground: 0 0% 100%;
+  /* white text on orange */
+  --accent-hover: 16 90% 51%;
+  /* #ee5d19 - darker orange for hover */
+
   /* Semantic */
   --success: 150 60% 40%;
   --error: 0 70% 55%;
+
   /* Radii */
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
@@ -89,8 +104,8 @@ body {
 
 /* Subtle gradient sheen */
 .gradient-sheen {
-  background: radial-gradient(circle at top left, rgba(210, 140, 90, 0.08), transparent 55%),
-    radial-gradient(circle at 70% 20%, rgba(180, 120, 80, 0.06), transparent 45%);
+  background: radial-gradient(circle at top left, rgba(251, 101, 30, 0.08), transparent 55%),
+    radial-gradient(circle at 70% 20%, rgba(251, 101, 30, 0.06), transparent 45%);
 }
 
 /* Focus visible for accessibility */
