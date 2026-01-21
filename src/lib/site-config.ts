@@ -8,13 +8,13 @@ export const siteConfig = {
         { title: "How it works", href: "#how-it-works" },
         { title: "Safety", href: "#safety" },
         { title: "Locations", href: "#locations" },
-        { title: "Apply", href: "#join" }
+        { title: "Waitlist", href: "#join" }
     ],
 
     hero: {
-        headline: "Every Wednesday. 6–8 people. Genuine connection.",
-        subheadline: "Curated dinner circles for real friendships — not dating, not networking.",
-        badge: "Launching in Bangalore with women-only tables.",
+        headline: "Weekly gatherings that turn strangers into friends.",
+        subheadline: "Launching in Bangalore with a women-first dinner circle pilot (6–8 max). We're starting with dinners to build trust — later, we'll add other curated offline journeys.",
+        badge: "Launching in Bangalore with a women-first pilot.",
         expectation: "We curate the table and venue—just show up. 90–120 mins • pay at venue • low-pressure.",
         holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend).",
         primaryCta: { label: "Apply for a seat", href: "#join" },
@@ -82,7 +82,7 @@ export const siteConfig = {
     safety: {
         title: "Safety is the baseline.",
         bullets: [
-            "Launching with women-only tables",
+            "Launching with a women-first pilot to set a trust baseline",
             "Public, well-lit venues",
             "Profile-checked (LinkedIn/Instagram)",
             "Clear code of conduct",
@@ -183,7 +183,7 @@ export const siteConfig = {
     formats: {
         title: "Formats (launching step-by-step)",
         lines: [
-            "Right now: Women-only Wednesday dinners (Bangalore)",
+            "Right now: Women-first pilot dinners every Wednesday (Bangalore)",
             "Next: Mixed tables • Drinks circles (once the model is proven)",
             "Later: Unplugged evenings • Culture nights • Rides — introduced carefully as we scale"
         ]

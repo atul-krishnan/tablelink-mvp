@@ -17,7 +17,7 @@ const safetyFeatures = [
         alt: "Beautiful, well-lit restaurant interior with warm ambient lighting"
     },
     {
-        title: "Women-only tables",
+        title: "Women-first pilot tables",
         description: "Safe, supportive environment",
         icon: "👥",
         image: "/images/safety-women-only.jpg",

@@ -90,7 +90,7 @@ export function Hero() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="text-success">✓</span>
-                                <span>Women-only</span>
+                                <span>Women-first pilot</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="text-success">✓</span>
