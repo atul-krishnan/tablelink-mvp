@@ -8,7 +8,7 @@ export const siteConfig = {
         { title: "How it works", href: "#how-it-works" },
         { title: "Safety", href: "#safety" },
         { title: "Locations", href: "#locations" },
-        { title: "Waitlist", href: "#join" }
+        { title: "Apply", href: "#join" }
     ],
 
     hero: {
@@ -129,7 +129,7 @@ export const siteConfig = {
     },
 
     joinForm: {
-        title: "Apply",
+        title: "Waitlist",
         body: "We review applications weekly. If selected, you'll get an invite on WhatsApp.",
         neighborhoods: [
             "Indiranagar (Live)",
