@@ -94,7 +94,8 @@ export const siteConfig = {
     socialProof: {
         stats: [
             { label: "Seats per table", value: "6–8" },
-            { label: "Rollout strategy", value: "Neighborhood-by-neighborhood" }
+            { label: "Rollout strategy", value: "Neighborhood-by-neighborhood" },
+            { label: "Cadence", value: "Every Wednesday" }
         ]
     },
 

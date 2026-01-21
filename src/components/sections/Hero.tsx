@@ -81,7 +81,7 @@ export function Hero() {
                         </div>
 
                         {/* Trust indicators */}
-                        <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
+                        <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground flex-wrap">
                             <div className="flex items-center gap-2">
                                 <svg className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -95,6 +95,10 @@ export function Hero() {
                             <div className="flex items-center gap-2">
                                 <span className="text-success">✓</span>
                                 <span>Safe venues</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="text-muted-foreground">✕</span>
+                                <span>Not a dating site</span>
                             </div>
                         </div>
                     </motion.div>
