@@ -52,7 +52,7 @@ export function Hero() {
 
                         {/* Headline */}
                         <h1 className="headline-underline font-display text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl leading-[1.1]">
-                            {hero.headline}
+                            From new <span className="text-accent">faces</span> to familiar <span className="text-accent">friends</span>.
                         </h1>
 
                         {/* Subheadline */}
