@@ -128,7 +128,7 @@ export const siteConfig = {
     },
 
     joinForm: {
-        title: "Waitlist",
+        title: "Apply",
         body: "We review applications weekly. If selected, you'll get an invite on WhatsApp.",
         neighborhoods: [
             "Indiranagar (Live)",
