@@ -12,7 +12,7 @@ export const siteConfig = {
     ],
 
     hero: {
-        headline: "Weekly gatherings that turn strangers into friends.",
+        headline: "Building a community, one weekly gathering at a time.",
         subheadline: "Launching in Bangalore with a women-first dinner circle pilot (6–8 max). We're starting with dinners to build trust — later, we'll add other curated offline journeys.",
         badge: "Launching in Bangalore with a women-first pilot.",
         expectation: "We curate the table and venue—just show up. 90–120 mins • low-pressure.",
