@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Hero } from "@/components/sections/Hero";
+import { SocialProof } from "@/components/sections/SocialProof";
 import { WhatThisIs } from "@/components/sections/WhatThisIs";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { SeatConfirmation } from "@/components/sections/SeatConfirmation";
@@ -16,6 +17,7 @@ export default function HomePage() {
     return (
         <>
             <Hero />
+            <SocialProof />
             <WhatThisIs />
             <HowItWorks />
             <SeatConfirmation />

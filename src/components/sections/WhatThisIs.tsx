@@ -12,6 +12,11 @@ export function WhatThisIs() {
                     <h2 className="headline-underline font-display text-3xl font-semibold tracking-tight sm:text-4xl">
                         {whatThisIs.title}
                     </h2>
+                    {whatThisIs.subtitle && (
+                        <p className="mt-4 text-base text-muted-foreground max-w-2xl">
+                            {whatThisIs.subtitle}
+                        </p>
+                    )}
                 </Reveal>
 
                 <div className="grid gap-8 md:grid-cols-2 lg:gap-12">

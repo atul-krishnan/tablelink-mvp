@@ -1,7 +1,7 @@
 export const siteConfig = {
-    name: "TableLink — Dinner club + offline circles for genuine connections",
-    description: "Dinner club + offline circles for genuine connections. Women-only tables launching in Bangalore.",
-    url: "https://tablelink.club",
+    name: "OffHoursPanda",
+    description: "Every Wednesday. 6–8 people. Curated dinner circles for genuine connection — not dating, not networking.",
+    url: "https://offhourspanda.club",
     ogImage: "/og-image.png",
 
     navigation: [
@@ -12,22 +12,24 @@ export const siteConfig = {
     ],
 
     hero: {
-        headline: "TableLink — Dinner club + offline circles for genuine connections",
-        subheadline: "Genuine connection — not dating, not networking.",
+        headline: "Every Wednesday. 6–8 people. Genuine connection.",
+        subheadline: "Curated dinner circles for real friendships — not dating, not networking.",
         badge: "Launching in Bangalore with women-only tables.",
-        holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend). Food/drinks paid at the venue.",
+        expectation: "We curate the table and venue—just show up. 90–120 mins • pay at venue • low-pressure.",
+        holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend).",
         primaryCta: { label: "Apply for a seat", href: "#join" },
         secondaryCta: { label: "How it works", href: "#how-it-works" }
     },
 
     whatThisIs: {
         title: "Built for comfort, not chaos.",
+        subtitle: "Not strangers-for-shock-value. We optimize for repeat comfort.",
         forYou: {
             header: "This is for you if you…",
             bullets: [
                 "want real friendships and a consistent social circle",
                 "prefer small groups over loud meetups",
-                "are 20–35, working (job/business), ₹60k+ income",
+                "are 20–35, working (job/business)",
                 "can commit to showing up (we keep circles small on purpose)"
             ]
         },
@@ -82,11 +84,19 @@ export const siteConfig = {
         bullets: [
             "Launching with women-only tables",
             "Public, well-lit venues",
-            "Profile checks (LinkedIn/Instagram)",
+            "Profile-checked (LinkedIn/Instagram)",
             "Clear code of conduct",
             "Zero tolerance for boundary violations"
         ],
         privacyLine: "We don't share phone numbers at the table. Connections happen only by mutual opt-in. For logistics, we use WhatsApp — you'll only be added after you opt in, and members in a group may be able to see each other's numbers."
+    },
+
+    socialProof: {
+        stats: [
+            { label: "Applications this week", value: "40+" },
+            { label: "Seats per table", value: "6–8" },
+            { label: "Rollout strategy", value: "Neighborhood-by-neighborhood" }
+        ]
     },
 
     locations: {
@@ -181,8 +191,8 @@ export const siteConfig = {
 
     footer: {
         tagline: "Built with trust. Grown city-by-city.",
-        contact: "hello@tablelink.club",
-        instagram: "@tablelink",
+        contact: "hello@offhourspanda.club",
+        instagram: "@offhourspanda",
         legal: [
             { label: "Privacy", href: "/privacy" },
             { label: "Terms", href: "/terms" }

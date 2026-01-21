@@ -24,7 +24,7 @@ const safetyFeatures = [
         alt: "Diverse group of women friends laughing and enjoying dinner together"
     },
     {
-        title: "Verified profiles",
+        title: "Profile-checked",
         description: "LinkedIn/Instagram required",
         icon: "✓",
         image: "/images/safety-verified-profiles.jpg",

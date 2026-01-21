@@ -60,8 +60,13 @@ export function Hero() {
                             {hero.subheadline}
                         </p>
 
+                        {/* Expectation line */}
+                        <p className="mt-4 text-sm text-muted-foreground/90 max-w-lg">
+                            {hero.expectation}
+                        </p>
+
                         {/* Hold line */}
-                        <p className="mt-4 text-sm text-muted-foreground/80 max-w-lg">
+                        <p className="mt-3 text-sm text-muted-foreground/80 max-w-lg">
                             {hero.holdLine}
                         </p>
 
@@ -78,8 +83,10 @@ export function Hero() {
                         {/* Trust indicators */}
                         <div className="mt-10 flex items-center gap-6 text-sm text-muted-foreground">
                             <div className="flex items-center gap-2">
-                                <span className="text-success">✓</span>
-                                <span>Verified profiles</span>
+                                <svg className="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span>Profile-checked</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="text-success">✓</span>
@@ -134,18 +141,22 @@ export function Hero() {
                             </div>
                         </motion.div>
 
+                        {/* Card 2: Profile-checked */}
                         <motion.div
-                            className="absolute -right-4 bottom-1/4 glass-card rounded-xl p-4 shadow-lg"
-                            animate={{ y: [0, 10, 0] }}
-                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5, duration: 0.6 }}
+                            className="absolute -right-4 top-1/3 w-40 rounded-xl border border-border bg-card/95 p-4 shadow-glow backdrop-blur-sm"
                         >
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-full bg-success/20 flex items-center justify-center text-lg">
-                                    🛡️
+                                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent/10">
+                                    <svg className="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
                                 </div>
                                 <div>
-                                    <p className="font-medium text-sm">100% Verified</p>
-                                    <p className="text-xs text-muted-foreground">Safe & trusted</p>
+                                    <p className="font-medium text-sm">Profile-checked</p>
+                                    <p className="text-xs text-muted-foreground">LinkedIn/IG</p>
                                 </div>
                             </div>
                         </motion.div>
