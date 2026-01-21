@@ -31,8 +31,8 @@ export function StickyNav() {
     return (
         <header
             className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
-                    ? "bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm"
-                    : "bg-transparent"
+                ? "bg-background/95 backdrop-blur-sm border-b border-border/50 shadow-sm"
+                : "bg-transparent"
                 }`}
         >
             <Container className="flex items-center justify-between py-4">
@@ -60,7 +60,7 @@ export function StickyNav() {
                 {/* Desktop CTA */}
                 <div className="hidden md:block">
                     <ButtonLink href="#join" variant="primary">
-                        Join
+                        Waitlist
                     </ButtonLink>
                 </div>
 
@@ -111,10 +111,10 @@ export function StickyNav() {
                                 <ButtonLink
                                     href="#join"
                                     variant="primary"
-                                    className="w-full justify-center"
+                                    className="w-full"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
-                                    Join
+                                    Waitlist
                                 </ButtonLink>
                             </div>
                         </Container>
