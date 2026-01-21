@@ -14,8 +14,8 @@ export const siteConfig = {
     hero: {
         headline: "Weekly gatherings that turn strangers into friends.",
         subheadline: "Launching in Bangalore with a women-first dinner circle pilot (6–8 max). We're starting with dinners to build trust — later, we'll add other curated offline journeys.",
-        badge: "Launching in Bangalore with a women-first pilot.",
-        expectation: "We curate the table and venue—just show up. 90–120 mins • pay at venue • low-pressure.",
+        badge: "Not for dating. Launching in Bangalore with a women-first pilot.",
+        expectation: "We curate the table and venue—just show up. 90–120 mins • low-pressure.",
         holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend).",
         primaryCta: { label: "Apply for a seat", href: "#join" },
         secondaryCta: { label: "How it works", href: "#how-it-works" }
@@ -93,7 +93,6 @@ export const siteConfig = {
 
     socialProof: {
         stats: [
-            { label: "Applications this week", value: "40+" },
             { label: "Seats per table", value: "6–8" },
             { label: "Rollout strategy", value: "Neighborhood-by-neighborhood" }
         ]
