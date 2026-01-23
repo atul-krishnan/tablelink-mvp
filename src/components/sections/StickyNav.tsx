@@ -69,7 +69,7 @@ export function StickyNav() {
 
                 {/* Desktop CTA */}
                 <div className="hidden md:block">
-                    <ButtonLink href="#join" variant="primary">
+                    <ButtonLink href="/#join" variant="primary">
                         Waitlist
                     </ButtonLink>
                 </div>
@@ -119,7 +119,7 @@ export function StickyNav() {
                             ))}
                             <div className="pt-2">
                                 <ButtonLink
-                                    href="#join"
+                                    href="/#join"
                                     variant="primary"
                                     className="w-full"
                                     onClick={() => setIsMobileMenuOpen(false)}

@@ -5,10 +5,10 @@ export const siteConfig = {
     ogImage: "/og-image.png",
 
     navigation: [
-        { title: "How it works", href: "#how-it-works" },
-        { title: "Safety", href: "#safety" },
-        { title: "Locations", href: "#locations" },
-        { title: "Apply", href: "#join" }
+        { title: "How it works", href: "/#how-it-works" },
+        { title: "Safety", href: "/#safety" },
+        { title: "Locations", href: "/#locations" },
+        { title: "Apply", href: "/#join" }
     ],
 
     hero: {
