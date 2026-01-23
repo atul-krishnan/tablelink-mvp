@@ -64,6 +64,15 @@ html.lenis body {
   pointer-events: none;
 }
 
+/* Performance optimizations for smooth animations */
+.glass-card,
+.image-reveal,
+[class*="animate-"] {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 body {
   @apply bg-background text-foreground antialiased;
   font-feature-settings: "ss01";
