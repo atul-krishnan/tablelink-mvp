@@ -132,9 +132,9 @@ export const siteConfig = {
         title: "Apply",
         body: "We review applications weekly. If selected, you'll get an invite on WhatsApp.",
         neighborhoods: [
-            "Indiranagar (Live)",
-            "Koramangala (Coming soon)",
-            "MG Road (Coming soon)",
+            "Indiranagar (Starting off from here)",
+            "Koramangala (Starting off from here)",
+            "MG Road (Starting off from here)",
             "Other"
         ],
         travelTimes: ["15 min", "20 min", "30 min"],
@@ -191,7 +191,7 @@ export const siteConfig = {
 
     footer: {
         tagline: "Built with trust. Grown city-by-city.",
-        contact: "hello@offhourspanda.club",
+        contact: "offhourspanda@gmail.com",
         instagram: "@offhourspanda",
         legal: [
             { label: "Privacy", href: "/privacy" },

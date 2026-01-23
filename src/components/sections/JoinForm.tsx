@@ -368,7 +368,7 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                             {/* Social URL */}
                             <div>
                                 <label htmlFor="socialUrl" className="block text-sm font-medium text-foreground mb-2">
-                                    LinkedIn or Instagram URL <span className="text-error">*</span>
+                                    LinkedIn or Instagram URL (public profiles only) <span className="text-error">*</span>
                                 </label>
                                 <input
                                     type="url"
@@ -377,7 +377,7 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                                     value={formData.socialUrl}
                                     onChange={handleChange}
                                     required
-                                    placeholder="https://linkedin.com/in/yourprofile"
+                                    placeholder="https://linkedin.com/in/yourprofile or https://instagram.com/yourprofile"
                                     aria-invalid={!!errors.socialUrl}
                                     aria-describedby={errors.socialUrl ? "socialUrl-error" : undefined}
                                 />
