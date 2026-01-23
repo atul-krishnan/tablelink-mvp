@@ -36,13 +36,13 @@ export function StickyNav() {
                 : "bg-transparent"
                 }`}
         >
-            <Container className="flex items-center justify-between py-4">
+            <Container className="flex items-center justify-between py-3">
                 {/* Logo */}
                 <Link
                     href="/"
                     className="flex items-center"
                 >
-                    <div className="relative h-20 sm:h-20 md:h-24 w-auto">
+                    <div className="relative h-12 sm:h-14 md:h-16 w-auto">
                         <Image
                             src="/images/offhourspanda-logo.png"
                             alt="OffHoursPanda"
