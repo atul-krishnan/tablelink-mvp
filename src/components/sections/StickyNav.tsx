@@ -39,9 +39,13 @@ export function StickyNav() {
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="font-display text-xl font-semibold tracking-tight"
+                    className="flex items-center"
                 >
-                    {siteConfig.name}
+                    <img
+                        src="/images/offhourspanda-logo.png"
+                        alt="OffHoursPanda"
+                        className="h-10 w-auto"
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}
