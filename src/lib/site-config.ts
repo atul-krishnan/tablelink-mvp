@@ -108,21 +108,21 @@ export const siteConfig = {
                 title: "Indiranagar",
                 body: "Weekly dinner circles curated for comfort, safety, and repeatability.",
                 button: "Apply for Indiranagar",
-                value: "Indiranagar (Live)"
+                value: "Indiranagar (Starting off from here)"
             },
             {
-                tag: "COMING SOON",
+                tag: "LIVE",
                 title: "Koramangala",
-                body: "We'll launch when the waitlist hits critical mass.",
-                button: "Koramangala waitlist",
-                value: "Koramangala (Coming soon)"
+                body: "Weekly dinner circles curated for comfort, safety, and repeatability.",
+                button: "Apply for Koramangala",
+                value: "Koramangala (Starting off from here)"
             },
             {
-                tag: "COMING SOON",
+                tag: "LIVE",
                 title: "MG Road",
-                body: "Join the waitlist to help us open circles here next.",
-                button: "MG Road waitlist",
-                value: "MG Road (Coming soon)"
+                body: "Weekly dinner circles curated for comfort, safety, and repeatability.",
+                button: "Apply for MG Road",
+                value: "MG Road (Starting off from here)"
             }
         ],
         note: "We're starting small on purpose. Quality first."
