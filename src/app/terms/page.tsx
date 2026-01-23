@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Container } from "@/components/sections/Container";
 
 export const metadata: Metadata = {
-    title: "Terms of Service",
-    description: "Terms of service for TableLink dinner club."
+    title: "Terms of Service - OffHoursPanda",
+    description: "Terms of service for OffHoursPanda dinner circles."
 };
 
 export default function TermsPage() {
@@ -16,7 +16,7 @@ export default function TermsPage() {
                     </h1>
 
                     <p className="text-muted-foreground mb-6">
-                        Last updated: January 2026
+                        Last updated: January 23, 2026
                     </p>
 
                     <div className="prose prose-neutral max-w-none space-y-6 text-muted-foreground">
@@ -25,7 +25,7 @@ export default function TermsPage() {
                                 Acceptance of Terms
                             </h2>
                             <p>
-                                By applying to or participating in TableLink dinner circles, you agree to be
+                                By applying to or participating in OffHoursPanda dinner circles, you agree to be
                                 bound by these Terms of Service and our Code of Conduct.
                             </p>
                         </section>
@@ -44,12 +44,24 @@ export default function TermsPage() {
 
                         <section>
                             <h2 className="text-xl font-semibold text-foreground mb-3">
+                                Profile Verification
+                            </h2>
+                            <p>
+                                All participants must provide a public LinkedIn or Instagram profile for verification.
+                                We verify profiles to ensure safety and authenticity. Providing false information or
+                                refusing verification will result in application rejection.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xl font-semibold text-foreground mb-3">
                                 Code of Conduct
                             </h2>
                             <p>
-                                TableLink is designed for genuine friendships. Dating, networking, or solicitation
-                                of any kind is not permitted. We have zero tolerance for boundary violations.
-                                Violation of these guidelines may result in removal from our community.
+                                OffHoursPanda is designed for genuine friendships. Dating, networking, or solicitation
+                                of any kind is not permitted. We have zero tolerance for boundary violations, harassment,
+                                or inappropriate behavior. Violation of these guidelines may result in immediate removal
+                                from our community without refund.
                             </p>
                         </section>
 
@@ -58,8 +70,52 @@ export default function TermsPage() {
                                 Eligibility
                             </h2>
                             <p>
-                                Currently, TableLink is open to women aged 20-35 who are working professionals
-                                in Bangalore. We may expand eligibility in the future.
+                                Currently, OffHoursPanda is launching with a women-first pilot for ages 20-35 in Bangalore.
+                                We're starting with Indiranagar, Koramangala, and MG Road neighborhoods. We may expand
+                                eligibility and locations in the future.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xl font-semibold text-foreground mb-3">
+                                Application Process
+                            </h2>
+                            <p>
+                                We review applications weekly. Not all applicants will be selected. Selection is based on
+                                profile verification, neighborhood availability, and maintaining balanced group dynamics.
+                                If selected, you'll receive an invite via WhatsApp with venue details.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xl font-semibold text-foreground mb-3">
+                                Cancellation Policy
+                            </h2>
+                            <p>
+                                You may cancel up to 24 hours before the event for a full refund. Cancellations within
+                                24 hours or no-shows will forfeit the ₹199 hold. Repeated cancellations may affect future
+                                invitations.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xl font-semibold text-foreground mb-3">
+                                Liability
+                            </h2>
+                            <p>
+                                OffHoursPanda facilitates connections but is not responsible for individual interactions,
+                                venue safety, or personal belongings. Participants attend at their own risk. We recommend
+                                following standard safety practices when meeting new people.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xl font-semibold text-foreground mb-3">
+                                Changes to Terms
+                            </h2>
+                            <p>
+                                We may update these Terms from time to time. We will notify you of significant changes
+                                via email or WhatsApp. Continued participation after changes constitutes acceptance.
                             </p>
                         </section>
 
@@ -69,11 +125,18 @@ export default function TermsPage() {
                             </h2>
                             <p>
                                 If you have any questions about these Terms, please contact us at{" "}
-                                <a href="mailto:hello@tablelink.club" className="text-accent hover:underline">
-                                    hello@tablelink.club
+                                <a href="mailto:offhourspanda@gmail.com" className="text-accent hover:underline">
+                                    offhourspanda@gmail.com
                                 </a>
                             </p>
                         </section>
+
+                        <div className="mt-8 p-4 bg-muted/30 rounded-lg">
+                            <p className="text-sm mb-0">
+                                <strong>Pilot Program:</strong> We're starting small and building trust carefully.
+                                These terms may evolve as we learn and grow.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </Container>
