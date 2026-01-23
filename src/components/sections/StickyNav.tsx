@@ -42,7 +42,7 @@ export function StickyNav() {
                     href="/"
                     className="flex items-center"
                 >
-                    <div className="relative h-10 sm:h-12 md:h-14 w-auto">
+                    <div className="relative h-12 sm:h-14 md:h-16 w-auto">
                         <Image
                             src="/images/offhourspanda-logo.png"
                             alt="OffHoursPanda"
