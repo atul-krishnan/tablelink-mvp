@@ -7,23 +7,26 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
     const lenisRef = useRef<Lenis | null>(null);
 
     useEffect(() => {
-        // Initialize Lenis
+        // Initialize Lenis with optimized settings
         lenisRef.current = new Lenis({
-            duration: 1.2,
+            duration: 0.8, // Reduced from 1.2 for snappier feel
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             orientation: "vertical",
             gestureOrientation: "vertical",
             smoothWheel: true,
             touchMultiplier: 2,
+            wheelMultiplier: 1,
+            infinite: false,
         });
 
-        // Animation frame loop
+        // Optimized animation frame loop
+        let rafId: number;
         function raf(time: number) {
             lenisRef.current?.raf(time);
-            requestAnimationFrame(raf);
+            rafId = requestAnimationFrame(raf);
         }
 
-        requestAnimationFrame(raf);
+        rafId = requestAnimationFrame(raf);
 
         // Handle anchor links for smooth scroll
         const handleAnchorClick = (e: MouseEvent) => {
@@ -47,6 +50,7 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
         document.addEventListener("click", handleAnchorClick);
 
         return () => {
+            if (rafId) cancelAnimationFrame(rafId);
             lenisRef.current?.destroy();
             document.removeEventListener("click", handleAnchorClick);
         };
