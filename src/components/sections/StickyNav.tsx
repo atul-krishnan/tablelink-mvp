@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig } from "@/lib/site-config";
 import { Container } from "@/components/sections/Container";
@@ -41,11 +42,16 @@ export function StickyNav() {
                     href="/"
                     className="flex items-center"
                 >
-                    <img
-                        src="/images/offhourspanda-logo.png"
-                        alt="OffHoursPanda"
-                        className="h-10 w-auto"
-                    />
+                    <div className="relative h-10 sm:h-12 md:h-14 w-auto">
+                        <Image
+                            src="/images/offhourspanda-logo.png"
+                            alt="OffHoursPanda"
+                            width={400}
+                            height={120}
+                            className="h-full w-auto object-contain"
+                            priority
+                        />
+                    </div>
                 </Link>
 
                 {/* Desktop Navigation */}
