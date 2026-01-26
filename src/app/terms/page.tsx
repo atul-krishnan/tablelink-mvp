@@ -32,10 +32,10 @@ export default function TermsPage() {
 
                         <section>
                             <h2 className="text-xl font-semibold text-foreground mb-3">
-                                The ₹199 Refundable Hold
+                                The ₹299 Refundable Hold
                             </h2>
                             <p>
-                                When you are invited to a dinner circle, a ₹199 hold confirms your seat.
+                                When you are invited to a dinner circle, a ₹299 hold confirms your seat.
                                 This amount is refunded after you attend. Late cancellations (less than 24 hours
                                 before the event) and no-shows will not be refunded. Food and drinks are paid
                                 directly to the venue.
@@ -65,14 +65,14 @@ export default function TermsPage() {
                             </p>
                         </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-foreground mb-3">
+                        <section className="mb-8">
+                            <h2 className="text-xl font-semibold mb-4 text-foreground">
                                 Eligibility
                             </h2>
-                            <p>
-                                Currently, OffHoursPanda is launching with a women-first pilot for ages 20-35 in Bangalore.
-                                We're starting with Indiranagar, Koramangala, and MG Road neighborhoods. We may expand
-                                eligibility and locations in the future.
+                            <p className="text-muted-foreground mb-4">
+                                Currently, OffHoursPanda is launching with a women-first pilot for ages 20-45 in Bangalore.
+                                We verify profiles via LinkedIn/Instagram to ensure the safety and quality of our community.
+                                We reserve the right to decline any application at our discretion.
                             </p>
                         </section>
 
@@ -87,14 +87,15 @@ export default function TermsPage() {
                             </p>
                         </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-foreground mb-3">
+                        <section className="mb-8">
+                            <h2 className="text-xl font-semibold mb-4 text-foreground">
                                 Cancellation Policy
                             </h2>
-                            <p>
-                                You may cancel up to 24 hours before the event for a full refund. Cancellations within
-                                24 hours or no-shows will forfeit the ₹199 hold. Repeated cancellations may affect future
-                                invitations.
+                            <p className="text-muted-foreground mb-4">
+                                You may cancel your attendance up to 24 hours before the scheduled event for a full
+                                refund of the hold amount. Cancellations made within
+                                24 hours or no-shows will forfeit the ₹299 hold. Repeated cancellations may affect future
+                                eligibility.
                             </p>
                         </section>
 

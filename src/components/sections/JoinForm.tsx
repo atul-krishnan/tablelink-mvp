@@ -65,8 +65,8 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
         }
 
         const age = parseInt(formData.age);
-        if (!formData.age || isNaN(age) || age < 20 || age > 35) {
-            newErrors.age = "Age must be between 20 and 35";
+        if (!formData.age || isNaN(age) || age < 20 || age > 45) {
+            newErrors.age = "Age must be between 20 and 45";
         }
 
         if (!formData.whatsappNumber.trim()) {
@@ -91,10 +91,10 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
             newErrors.hopes = "Please write at least 15 characters";
         }
 
-        if (!formData.socialUrl.trim()) {
-            newErrors.socialUrl = "LinkedIn or Instagram URL is required";
-        } else if (!formData.socialUrl.includes("linkedin.com") && !formData.socialUrl.includes("instagram.com")) {
-            newErrors.socialUrl = "Please enter a valid LinkedIn or Instagram URL";
+        if (formData.socialUrl.trim()) {
+            if (!formData.socialUrl.includes("linkedin.com") && !formData.socialUrl.includes("instagram.com")) {
+                newErrors.socialUrl = "Please enter a valid LinkedIn or Instagram URL";
+            }
         }
 
         if (!formData.consent) {
@@ -241,8 +241,8 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                                     onChange={handleChange}
                                     required
                                     min={20}
-                                    max={35}
-                                    placeholder="20-35"
+                                    max={45}
+                                    placeholder="20-45"
                                     aria-invalid={!!errors.age}
                                     aria-describedby={errors.age ? "age-error" : undefined}
                                 />
@@ -368,7 +368,7 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                             {/* Social URL */}
                             <div>
                                 <label htmlFor="socialUrl" className="block text-sm font-medium text-foreground mb-2">
-                                    LinkedIn or Instagram URL (public profiles only) <span className="text-error">*</span>
+                                    LinkedIn or Instagram URL (public profiles only)
                                 </label>
                                 <input
                                     type="url"
@@ -376,7 +376,6 @@ export function JoinForm({ preselectedNeighborhood }: JoinFormProps) {
                                     name="socialUrl"
                                     value={formData.socialUrl}
                                     onChange={handleChange}
-                                    required
                                     placeholder="https://linkedin.com/in/yourprofile or https://instagram.com/yourprofile"
                                     aria-invalid={!!errors.socialUrl}
                                     aria-describedby={errors.socialUrl ? "socialUrl-error" : undefined}

@@ -83,7 +83,7 @@ export default function PrivacyPage() {
                             </h2>
                             <p>
                                 You have the right to access, correct, or delete your personal data, opt-out of communications,
-                                and withdraw consent at any time. Our service is only for individuals aged 20-35.
+                                and withdraw consent at any time. Our service is only for individuals aged 20-45.
                             </p>
                         </section>
 

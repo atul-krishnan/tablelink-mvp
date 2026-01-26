@@ -16,7 +16,7 @@ export const siteConfig = {
         subheadline: "Launching in Bangalore with a women-first dinner circle pilot (6–8 max). We're starting with dinners to build trust — later, we'll add other curated offline journeys.",
         badge: "Launching in Bangalore with a women-first pilot.",
         expectation: "We curate the table and venue - you just need to show up :)",
-        holdLine: "₹199 refundable hold to confirm your seat (refunded after you attend).",
+        holdLine: "₹299 refundable hold to confirm your seat (refunded after you attend).",
         primaryCta: { label: "Apply for a seat", href: "#join" },
         secondaryCta: { label: "How it works", href: "#how-it-works" }
     },
@@ -29,7 +29,7 @@ export const siteConfig = {
             bullets: [
                 "want real friendships and a consistent social circle",
                 "prefer small groups over loud meetups",
-                "are 20–35, working (job/business)",
+                "are 20–45, working (job/business)",
                 "can commit to showing up (we keep circles small on purpose)"
             ]
         },
@@ -70,8 +70,8 @@ export const siteConfig = {
     },
 
     seatConfirmation: {
-        title: "Seat confirmation (₹199 refundable hold)",
-        intro: "No-shows ruin small circles. The ₹199 refundable hold ensures everyone commits.",
+        title: "Seat confirmation (₹299 refundable hold)",
+        intro: "No-shows ruin small circles. The ₹299 refundable hold ensures everyone commits.",
         bullets: [
             "Refunded after you attend",
             "Non-refundable for late cancellations (<24h) or no-shows",
@@ -139,7 +139,7 @@ export const siteConfig = {
         ],
         travelTimes: ["15 min", "20 min", "30 min"],
         workTypes: ["Job", "Business", "Freelance", "Other"],
-        consentText: "I agree to the code of conduct and understand the ₹199 hold policy.",
+        consentText: "I agree to the code of conduct and understand the ₹299 hold policy.",
         submitButton: "Apply",
         success: {
             headline: "You're on the list.",
@@ -154,8 +154,8 @@ export const siteConfig = {
             answer: "We're starting with Bangalore to get the experience right. If it works, we'll expand city-by-city."
         },
         {
-            question: "Will this always be ₹199?",
-            answer: "No — ₹199 is a refundable hold during launch to reduce no-shows. If the model works, we may evolve into ticketing or memberships later to keep circles reliable and safe."
+            question: "Will this always be ₹299?",
+            answer: "No — ₹299 is a refundable hold during launch to reduce no-shows. If the model works, we may evolve into ticketing or memberships later to keep circles reliable and safe."
         },
         {
             question: "Is this dating?",
@@ -166,7 +166,7 @@ export const siteConfig = {
             answer: "No pitches, no 'salesy' vibe. Real conversations only."
         },
         {
-            question: "How does the ₹199 hold work?",
+            question: "How does the ₹299 hold work?",
             answer: "It confirms your seat and reduces no-shows. It's refunded after you attend. Late cancellations (<24 hours) and no-shows aren't refunded."
         },
         {
@@ -177,7 +177,7 @@ export const siteConfig = {
 
     launchPolicy: {
         title: "Launch policy",
-        body: "We're starting small and keeping circles curated. For now, we use a ₹199 refundable hold to confirm attendance. If this works, we'll introduce ticketing and memberships later to maintain quality and safety."
+        body: "We're starting small and keeping circles curated. For now, we use a ₹299 refundable hold to confirm attendance. If this works, we'll introduce ticketing and memberships later to maintain quality and safety."
     },
 
     formats: {
